@@ -6,10 +6,10 @@ import { viteStaticCopy } from "vite-plugin-static-copy";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/Druva-Portfolio-Web-Interface/",
+  base: "/Druva-Portfolio-Web-Interface/", // Important for GitHub Pages
 
   server: {
-    host: "::",
+    host: "localhost", // "::" can cause issues on some systems
     port: 8080,
   },
 
@@ -21,14 +21,14 @@ export default defineConfig(({ mode }) => ({
         targets: [
           {
             src: "dist/index.html",
-            dest: ".", // It will be dist/404.html
+            dest: ".",     // will copy to dist/404.html
             rename: "404.html",
           },
         ],
         flatten: false,
         watch: false,
       }),
-  ].filter(Boolean),
+  ].filter(Boolean), // Remove any falsy plugins
 
   resolve: {
     alias: {
@@ -38,7 +38,9 @@ export default defineConfig(({ mode }) => ({
 
   build: {
     rollupOptions: {
-      input: "./index.html",
+      input: "./index.html", // Entry point
     },
+    outDir: "dist", // default, but can be explicitly mentioned
+    emptyOutDir: true,
   },
 }));
