@@ -36,11 +36,11 @@ const Hero = () => {
         <div className="fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow">
             Hello, I'm{' '}
-            <span className="gradient-text">Alex Johnson</span>
+            <span className="gradient-text">Druva Bhagavatula</span>
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-muted-foreground mb-8 font-light">
-            Full Stack Developer & AI Enthusiast
+            Software Engineer · Web Developer · Upskilling in Data Science
           </h2>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">

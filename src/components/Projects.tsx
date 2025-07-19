@@ -128,74 +128,12 @@ const Projects = () => {
                       Code
                     </a>
                   </Button>
-                  <Button asChild className="btn-primary" size="sm">
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink size={16} className="mr-2" />
-                      Live Demo
-                    </a>
-                  </Button>
                 </div>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        {/* Other Projects Grid */}
-        <div>
-          <h3 className="text-3xl font-bold text-center mb-12 text-foreground">
-            More Projects
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {otherProjects.map((project, index) => (
-              <Card key={index} className="scale-on-hover bg-gradient-card border-border/50 group">
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                
-                <CardContent className="p-4 space-y-3">
-                  <div className="flex items-center space-x-2">
-                    <project.icon className="text-primary" size={20} />
-                    <h4 className="font-semibold text-foreground text-sm">{project.title}</h4>
-                  </div>
-                  
-                  <p className="text-muted-foreground text-sm line-clamp-2">
-                    {project.description}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-1">
-                    {project.tech.slice(0, 3).map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="outline" className="text-xs">
-                        {tech}
-                      </Badge>
-                    ))}
-                    {project.tech.length > 3 && (
-                      <Badge variant="outline" className="text-xs">
-                        +{project.tech.length - 3}
-                      </Badge>
-                    )}
-                  </div>
-                  
-                  <div className="flex space-x-2 pt-2">
-                    <Button asChild variant="ghost" size="sm" className="h-8 px-2">
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        <Github size={14} />
-                      </a>
-                    </Button>
-                    <Button asChild variant="ghost" size="sm" className="h-8 px-2">
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink size={14} />
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
