@@ -17,6 +17,8 @@ const Hero = () => {
     }
   };
 
+  const resumeLink = 'https://drive.google.com/file/d/1AK6eGqNNynZ5l24Ze02nxf53GdMXBOQl/preview';
+
   return (
     <section 
       id="hero" 
@@ -55,13 +57,15 @@ const Hero = () => {
               Hire Me
             </Button>
             
-            <Button 
-              variant="outline" 
-              className="px-8 py-6 text-lg font-semibold rounded-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            <a 
+              href={resumeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-6 text-lg font-semibold rounded-full border border-primary text-primary hover:bg-primary hover:text-primary-foreground flex items-center"
             >
               <Download className="mr-2" size={20} />
               Download Resume
-            </Button>
+            </a>
           </div>
         </div>
         
