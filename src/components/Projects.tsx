@@ -6,65 +6,26 @@ import { Badge } from '@/components/ui/badge';
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, and real-time inventory tracking.',
+      title: 'Stay Booking Website',
+      description: 'Full-stack Stay Booking with Bootstrap, Node.js & Express.js. Features include user authentication, Real Time Booking , and real-time Updates.',
       icon: Code,
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop',
-      tech: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'AWS'],
-      github: 'https://github.com/alexjohnson/ecommerce',
+      image: 'https://uizard.io/static/4be96ac754565f8720e19cec6896056a/a8e47/02c979416071b16b4df94ea262685e88ff12724b-1440x835.png',
+      tech: ['BootStrap', 'Node.js','Express.js', 'MongoDB'],
+      github: 'https://github.com/Druva2804/Travel-Booking-Web-App.git',
       demo: 'https://ecommerce-demo.com',
       featured: true,
     },
     {
-      title: 'AI Chat Application',
-      description: 'Real-time chat application with AI-powered responses using OpenAI API. Built with React and Socket.io for seamless communication.',
+      title: 'Vehicle Classification and Pollution using Autonomous UAV',
+      description: 'Implemented autonomous UAVs for real-time vehicle classification and pollution control monitoring.',
       icon: Database,
-      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop',
-      tech: ['React', 'OpenAI', 'Socket.io', 'Express', 'MongoDB'],
-      github: 'https://github.com/alexjohnson/ai-chat',
-      demo: 'https://ai-chat-demo.com',
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmq_RL4ND7prWOI-9uNm3NA07vl5T3WbcqRA&s",
+      tech: ["Python","Machine Learning"],
       featured: true,
     },
-    {
-      title: 'Task Management App',
-      description: 'Collaborative task management application with drag-and-drop functionality, real-time updates, and team collaboration features.',
-      icon: Smartphone,
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
-      tech: ['Vue.js', 'Firebase', 'Vuetify', 'PWA'],
-      github: 'https://github.com/alexjohnson/task-manager',
-      demo: 'https://task-manager-demo.com',
-      featured: false,
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather dashboard with interactive maps, forecasts, and location-based services. Responsive design for all devices.',
-      icon: Code,
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop',
-      tech: ['React', 'Weather API', 'Mapbox', 'Tailwind'],
-      github: 'https://github.com/alexjohnson/weather-app',
-      demo: 'https://weather-dashboard-demo.com',
-      featured: false,
-    },
-    {
-      title: 'Cryptocurrency Tracker',
-      description: 'Real-time cryptocurrency tracking application with portfolio management, price alerts, and market analysis tools.',
-      icon: Database,
-      image: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=500&h=300&fit=crop',
-      tech: ['React Native', 'CoinGecko API', 'Redux', 'Chart.js'],
-      github: 'https://github.com/alexjohnson/crypto-tracker',
-      demo: 'https://crypto-tracker-demo.com',
-      featured: false,
-    },
-    {
-      title: 'Social Media Analytics',
-      description: 'Comprehensive social media analytics platform with data visualization, engagement tracking, and automated reporting.',
-      icon: Smartphone,
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop',
-      tech: ['Next.js', 'D3.js', 'Python', 'PostgreSQL', 'Docker'],
-      github: 'https://github.com/alexjohnson/social-analytics',
-      demo: 'https://social-analytics-demo.com',
-      featured: false,
-    },
+    
+   
+  
   ];
 
   const featuredProjects = projects.filter(project => project.featured);

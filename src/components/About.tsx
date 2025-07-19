@@ -38,8 +38,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Passionate developer with 5+ years of experience building scalable web applications 
-            and exploring the frontiers of artificial intelligence.
+            Passionate about Data Science, with experience working on solid projects and currently exploring new, impactful ones.
           </p>
         </div>
 
@@ -47,32 +46,19 @@ const About = () => {
           {/* Bio Section */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-foreground">
-              Crafting Digital Solutions
+              Software Engineer
             </h3>
             <p className="text-muted-foreground leading-relaxed">
               I'm a Software Engineer and Web Developer with a passion for creating efficient digital solutions. 
               My journey in technology is driven by continuous learning and problem-solving, currently 
-              expanding my expertise in data science and modern web development.
+              expanding my expertise in data science.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               I work with various programming languages and frameworks, focusing on building robust 
               applications while strengthening my foundation in computer science fundamentals and 
               exploring the exciting field of data science.
             </p>
-            <div className="flex flex-wrap gap-4 pt-4">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">50+</div>
-                <div className="text-sm text-muted-foreground">Projects Completed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">5+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">30+</div>
-                <div className="text-sm text-muted-foreground">Happy Clients</div>
-              </div>
-            </div>
+           
           </div>
 
           {/* Profile Image Placeholder */}

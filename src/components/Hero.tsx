@@ -44,8 +44,7 @@ const Hero = () => {
           </h2>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            Crafting exceptional digital experiences through innovative code and creative problem-solving. 
-            Passionate about building scalable applications that make a difference.
+            Passionate about data science and building future-forward projects that seamlessly integrate hardware and software. Dedicated to crafting exceptional digital experiences through innovative code and creative problem-solving.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

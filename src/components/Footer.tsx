@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center md:text-left">
             <p className="text-muted-foreground">
-              © {currentYear} Alex Johnson. Made with{' '}
+              © {currentYear} Druva Bhagavatula. Made with{' '}
               <Heart className="inline w-4 h-4 text-red-500 fill-current" />{' '}
               and lots of coffee.
             </p>

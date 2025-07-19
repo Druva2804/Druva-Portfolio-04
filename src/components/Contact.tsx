@@ -41,19 +41,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'alex.johnson@email.com',
-      href: 'mailto:alex.johnson@email.com'
+      value: 'Druva.bhagavatula04@gmail.com',
+      href: 'Druva.bhagavatula04@gmail.com'
     },
-    {
-      icon: Phone,
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
-    },
+    // {
+    //   icon: Phone,
+    //   label: 'Phone',
+    //   value: '+1 (555) 123-4567',
+    //   href: 'tel:+15551234567'
+    // },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Hyderabad, India',
       href: '#'
     }
   ];
@@ -62,19 +62,19 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/alexjohnson',
+      href: 'https://github.com/Druva2804',
       color: 'hover:text-white'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/alexjohnson',
+      href: 'https://www.linkedin.com/in/bhagavatuladruva/',
       color: 'hover:text-blue-400'
     },
     {
       icon: Twitter,
       label: 'Twitter',
-      href: 'https://twitter.com/alexjohnson',
+      href: 'https://x.com/druvabhagavatu2',
       color: 'hover:text-blue-400'
     }
   ];
