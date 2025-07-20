@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig(({ mode }) => ({
-  // base: "/", // Not needed for Vercel
+  base: "/", // Optional but safe
 
   server: {
     host: "localhost",
@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => ({
       viteStaticCopy({
         targets: [
           {
-            src: "dist/index.html",
+            src: "index.html", // ✅ not dist/index.html
             dest: ".",
             rename: "404.html",
           },
