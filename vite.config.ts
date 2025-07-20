@@ -4,12 +4,11 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/Druva-Portfolio-Web-Interface/", // Important for GitHub Pages
+  // base: "/", // Not needed for Vercel
 
   server: {
-    host: "localhost", // "::" can cause issues on some systems
+    host: "localhost",
     port: 8080,
   },
 
@@ -21,14 +20,14 @@ export default defineConfig(({ mode }) => ({
         targets: [
           {
             src: "dist/index.html",
-            dest: ".",     // will copy to dist/404.html
+            dest: ".",
             rename: "404.html",
           },
         ],
         flatten: false,
         watch: false,
       }),
-  ].filter(Boolean), // Remove any falsy plugins
+  ].filter(Boolean),
 
   resolve: {
     alias: {
@@ -38,9 +37,9 @@ export default defineConfig(({ mode }) => ({
 
   build: {
     rollupOptions: {
-      input: "./index.html", // Entry point
+      input: "./index.html",
     },
-    outDir: "dist", // default, but can be explicitly mentioned
+    outDir: "dist",
     emptyOutDir: true,
   },
 }));
